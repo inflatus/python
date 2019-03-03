@@ -6,7 +6,7 @@ import requests
 import urllib
 
 try:
-    url = 'http://zaffudo.com/sebe/Pathfinder%20Roleplaying%20Game/'
+    url = 'https://inflatus.io'
 
     # now, with the below headers, we defined ourselves as a simpleton who is
     # still using internet explorer.
