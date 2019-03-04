@@ -40,21 +40,18 @@ precipitation_in = parsed_json['current_observation']['precip_today_in']
 weather = parsed_json['current_observation']['weather']
 
 # tweeting the data
-tweet = ('Current temperature in {} is: {} F'.format(location, temp_f))
-status = api.update_status(status=tweet)
-tweet = ('Relative Humidity is at: {}'.format(relative_humidity))
-status = api.update_status(status=tweet)
-tweet = ('Winds are: {} mph'.format(wind_mph))
-status = api.update_status(status=tweet)
-tweet = ('Wind gusts are at: {} mph'.format(wind_gust))
-status = api.update_status(status=tweet)
-tweet = ('Pressure is: {} mb'.format(pressure_mb))
-status = api.update_status(status=tweet)
-tweet = ('Feels like: {} F'.format(feels_like))
-status = api.update_status(status=tweet)
-tweet = ('Visibility is: {} mi'.format(visibility_mi))
-status = api.update_status(status=tweet)
-tweet = ('Precipitation today: {} inches'.format(precipitation_in))
-status = api.update_status(status=tweet)
-tweet = ('General weather is: {}'.format(weather))
-status = api.update_status(status=tweet)
+temp_f = ('Current temperature in {} is: {} F'.format(location, temp_f))
+relative_humidity = ('Relative Humidity is at: {}'.format(relative_humidity))
+wind_mph = ('Winds are: {} mph'.format(wind_mph))
+wind_gust = ('Wind gusts are at: {} mph'.format(wind_gust))
+pressure_mb = ('Pressure is: {} mb'.format(pressure_mb))
+feels_like = ('Feels like: {} F'.format(feels_like))
+visibility_mi = ('Visibility is: {} mi'.format(visibility_mi))
+precipitation_in = ('Precipitation today: {} inches'.format(precipitation_in))
+weather = ('General weather is: {}'.format(weather))
+
+# status = api.update_status(status=tweet)
+
+# trying to combine all varibles into one tweet
+# print (temp_f,relative_humidity,wind_mph, wind_gust, pressure_mb, feels_like,
+#       visibility_mi, precipitation_in, weather, sep='\n')
