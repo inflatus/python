@@ -1,4 +1,9 @@
 # will tweet the current weather
+# https://www.wunderground.com/weather/api/
+# weather undergroud will no longer provide free api keys
+# thank you for providing the keys in the past
+# they have been a great help
+
 
 import urllib.request
 import json
@@ -53,5 +58,6 @@ weather = ('General weather is: {}'.format(weather))
 # status = api.update_status(status=tweet)
 
 # trying to combine all varibles into one tweet
-# print (temp_f,relative_humidity,wind_mph, wind_gust, pressure_mb, feels_like,
-#       visibility_mi, precipitation_in, weather, sep='\n')
+tweet = (temp_f, relative_humidity, wind_mph, wind_gust, pressure_mb, feels_like, visibility_mi, precipitation_in, weather)
+print (tweet)
+
