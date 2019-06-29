@@ -15,26 +15,26 @@ pip install --upgrade pip
 
 # upgrade pip and install pypi packages
 echo "Installing pypi packages"
-pip install --upgrade pip
-pip install python-dateutil
-pip install lxml
-pip install httplib2
-pip install psutil
-pip install beautifulsoup4
-pip install numpy
-pip install virtualenv
+pip3 install --upgrade pip
+pip3 install python-dateutil
+pip3 install lxml
+pip3 install httplib2
+pip3 install psutil
+pip3 install beautifulsoup4
+pip3 install numpy
+pip3 install virtualenv
 # pip install pep8 *** renamed to pycodestyle ***
-pip install ipython
-pip install scikit-learn
-pip install mypy
-pip install selenium
-pip install twilio
-pip install python-nmap
-pip install scrapy
-pip install twisted
-pip install validators
-pip install wheel
-pip install pandas
-pip install tweepy
-pip install pycodestyle
-pip install wget
+pip3 install ipython
+pip3 install scikit-learn
+pip3 install mypy
+pip3 install selenium
+pip3 install twilio
+pip3 install python-nmap
+pip3 install scrapy
+pip3 install twisted
+pip3 install validators
+pip3 install wheel
+pip3 install pandas
+pip3 install tweepy
+pip3 install pycodestyle
+pip3 install wget
