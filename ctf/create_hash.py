@@ -1,5 +1,5 @@
 #creating a sha256 hash from input
-#need to expand on this to provide has choice 
+#need to expand on this to provide hash choice 
 
 import hashlib
 
