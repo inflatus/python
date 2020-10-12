@@ -4,6 +4,8 @@
 API_KEYS.py
 test.py
 *.csv
+*.ovpn
+.*
 
 # gitignore info from GitHub python.gitignore repository
 # Byte-compiled / optimized / DLL files
