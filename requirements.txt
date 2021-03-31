@@ -30,7 +30,7 @@ ipython-genutils==0.2.0
 jedi==0.14.0
 joblib==0.13.2
 langtable==0.0.43
-lxml==4.3.4
+lxml==4.6.3
 Mako==1.0.12.dev0
 MarkupSafe==1.1.1
 mypy==0.711
