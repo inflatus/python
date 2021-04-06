@@ -2,6 +2,7 @@
 # need to expand on this to provide hash choice
 # find a way to iterate over hashlib.algorithms_available
 # this script is inefficient
+# may include other hash types later
 
 import hashlib
 
