@@ -13,5 +13,6 @@ secret = secret.decode('hex')
 key = 'pythonwillhelpyouopenthedoor'
 ret = ''
 for i in xrange(len(secret)):
-    ret += chr(ord(secret[i])^ord(key[i%len(key)]))
-print ret
+    ret += chr(ord(secret[i]) ^ ord(key[i % len(key)]))
+print
+ret
