@@ -16,3 +16,4 @@ Added a text file to each section stating purpose and future plans.
 Am going to focus on how to implement python into my job.
 
 Will use Python as a wrapper for trying bug bounties.
+Will use it to automate.
