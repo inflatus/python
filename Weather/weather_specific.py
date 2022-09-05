@@ -1,20 +1,31 @@
-# grab the current weather for Martinsville
-# display the temp, feels like temp
-# weather phrase, high/low temps and uv index
+'''grab the current weather for Martinsville Indiana using google weather'''
 
-import requests
-from bs4 import BeautifulSoup
+import urllib.request
+import json
+import sys
 
-r = requests.get('https://www.google.com/search?client=firefox-b-1-d&q=weather')
-soup = BeautifulSoup(r.text, 'html.parser')
+def get_weather():
+    '''get the weather'''
+    url = 'http://www.google.com/ig/api?weather=46151'
+    try:
+        data = urllib.request.urlopen(url).read()
+    except urllib.error.URLError as error:
+        print(error)
+        sys.exit(1)
+    data = data.decode('utf-8')
+    data = json.loads(data)
+    return data
 
-temp = soup.find('div', attrs={'class': 'vk_bk TylWce SGNhVe'})
-feels_like = soup.find('div', attrs={'class': 'TodayDetailsCard-feels'})
-phrase = soup.find('div', attrs={'class': 'TodayDetailsCard-phrase'})
-hilo = soup.find('div', attrs={'class': 'TodayDetailsCard-hilo'})
+def main():
+    '''main function'''
+    data = get_weather()
+    print(data['weather']['current_conditions']['condition']['data'])
+    print(data['weather']['current_conditions']['temp_f']['data'])
+    print(data['weather']['current_conditions']['humidity']['data'])
+    print(data['weather']['current_conditions']['wind_condition']['data'])
 
-print('The temperature in Martinsville is', temp)
-#print(feels_like)
-#print(phrase)
-#print(hilo[:13])
-#print(hilo[13:])
+if __name__ == '__main__':
+    main()
+
+#!/usr/bin/env python3
+# Path: Weather/weather_specific.py
