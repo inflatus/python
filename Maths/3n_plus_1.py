@@ -1,3 +1,4 @@
+'''Collatz Conjecture'''
 '''taking an input and applying the 3n+1 conjecture to it'''
 '''one of my favorite number theory problems'''
 
